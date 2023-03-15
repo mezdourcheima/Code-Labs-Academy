@@ -1,0 +1,13 @@
+Boosted Trees
+
+Introduction :
+
+Up until now, we have seen a lot of powerful supervised learning methods that can achieve great results when correctly employed. The last method we have seen, which is random forests, is a part of what we call ensemble learning methods. In ensemble learning methods, we use multiple learners, which means we will be creating multiple models and combining them to achieve better results. One of the most recent ensemble learning methods is the eXtreme Gradient Boosting method called XGBoost for short. XGBoost appeared in 2014 as it was the method used by a lot of Kaggle competition winners, it is considered one of the best supervised Machine learning algorithms.
+
+Principle:
+
+XGBoost is used mainly on trees, it is very similar to random forests, the difference is in how these trees are trained. In random forests, all the trees are trained in parallel. However, in Boosted trees, each tree learns from the errors of the previous round and we move to a new tree in every round. We can use the mean squared error (MSE) as an objective function to optimize with the gradient algorithm. The learning of the tree structures is done using an additive strategy. In this course, we won’t go into mathematical details, but if you’re curious, you can check them on XGBoost’s official website "https://xgboost.readthedocs.io/en/latest/tutorials/model.html".
+
+Code:
+
+To check how boosted trees are used, check this notebook " https://github.com/CLA-Data-Science-Bootcamp/content/blob/main/3_classical_machine_learning/lessons/5_xgboost/XGBoost.ipynb".
